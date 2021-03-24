@@ -52,7 +52,7 @@ class Song
     new_arr = file.split(" - ")
     song_mp3 = new_arr[1]
     artist = new_arr[0]
-    song = song_mp3.split(" . ")
+    song = song_mp3.split(".")
     song = song[0]
     
     new_song_instance = self.new
@@ -61,7 +61,18 @@ class Song
     new_song_instance
   end
   
-  def self.
+  def self.create_from_filename(file)
+    new_arr = file.split(" - ")
+    song_mp3 = new_arr[1]
+    artist = new_arr[0]
+    song = song_mp3.split(".")
+    song = song[0]
+    
+    new_song_instance = self.create
+    new_song_instance.artist_name = artist
+    new_song_instance.name = song
+    new_song_instance
+  end
   
 end
   
