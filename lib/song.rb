@@ -48,5 +48,11 @@ class Song
     self.all.clear
   end
   
+  def self.new_from_filename(file)
+    new_arr = file.split(" - ")
+    song_mp3 = new_arr[1]
+    artist = new_arr[0]
+    song
+  
 end
   
