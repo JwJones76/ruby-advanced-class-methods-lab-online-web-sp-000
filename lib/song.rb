@@ -61,5 +61,7 @@ class Song
     new_song_instance
   end
   
+  def self.
+  
 end
   
